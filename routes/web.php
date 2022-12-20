@@ -85,6 +85,10 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
         Route::post('client/store',[ClientController::class,'store'])->name('clients.store');
 
         // Route image
+        Route::resource('products', ProductController::class);
 
+        Route::get('ID/{id}',function($id){
+            return view('test',$id);
+        });
     });
 });
