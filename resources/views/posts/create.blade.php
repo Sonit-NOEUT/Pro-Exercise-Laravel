@@ -2,7 +2,7 @@
 
 @section('content')
     <h1 class="mb-3">Add new post</h1>
-    <div class="bg-info p-4 rounded" style="box-shadow: 0px 0px 5px grey">
+    <div class="bg-secondary p-4 rounded text-dark" style="box-shadow: 0px 0px 15px rgb(8, 8, 8)">
         <div class="lead">
             Add new post.
         </div>
@@ -15,7 +15,7 @@
                     <label for="title" class="form-label">Title</label>
                     <input value="{{ old('title') }}"
                         type="text"
-                        class="form-control text-white"
+                        class="form-control"
                         name="title"
                         placeholder="Title" required>
 
@@ -28,7 +28,7 @@
                     <label for="description" class="form-label">Description</label>
                     <input value="{{ old('description') }}"
                         type="text"
-                        class="form-control text-white"
+                        class="form-control"
                         name="description"
                         placeholder="Description" required>
 
@@ -39,7 +39,7 @@
 
                 <div class="mb-3">
                     <label for="body" class="form-label">Body</label>
-                    <textarea class="form-control text-white"
+                    <textarea class="form-control"
                         name="body"
                         placeholder="Body" required>{{ old('body') }}</textarea>
 
@@ -49,8 +49,8 @@
                 </div>
 
 
-                <button type="submit" class="btn btn-success">Save role</button>
-                <a href="{{ route('posts.index') }}" class="btn btn-light">Back</a>
+                <button type="submit" class="btn btn-danger">Save role</button>
+                <a href="{{ route('posts.index') }}" class="btn btn-dark">Back</a>
             </form>
         </div>
 

@@ -4,8 +4,8 @@
 
     <h1 class="mb-3">Post</h1>
 
-    <div class="p-4 rounded" style="box-shadow: 0px 0px 5px white;background: #042331;">
-        <div class="lead text-white mb-3">
+    <div class="bg-secondary p-4 rounded text-dark" style="box-shadow: 0px 0px 15px rgb(8, 8, 8)">
+        <div class="lead mb-3">
             Manage your posts here.
             <a href="{{ route('posts.create') }}" class="btn btn-success btn-sm float-right p-2">Add post</a>
         </div>
@@ -14,7 +14,7 @@
             @include('layouts.partials.messages')
         </div>
 
-        <table class="table table-bordered text-white" border="1">
+        <table class="table table-bordered text-dark" border="1">
           <tr>
              <th width="1%"><strong>No</strong></th>
              <th><strong>Name</strong></th>

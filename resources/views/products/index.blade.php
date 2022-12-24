@@ -2,7 +2,7 @@
 
 @section('content')
 <h2>Manage your Product here!</h2>
-<div class="p-4 rounded" style="box-shadow: 0px 0px 5px white;background: #042331;">
+<div class="bg-secondary p-4 rounded text-dark" style="box-shadow: 0px 0px 15px rgb(8, 8, 8)">
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-right mb-3 float-right p-2">
@@ -17,7 +17,7 @@
         </div>
     @endif
 
-    <table class="table table-bordered">
+    <table class="table table-bordered text-dark" border="1">
         <tr>
             <th>No</th>
             <th>Image</th>
@@ -28,7 +28,7 @@
         @foreach ($products as $product)
         <tr>
             <td>{{ ++$j; }}</td>
-            <td><img src="/images/{{ $product->image }}" width="100px"></td>
+            <td><img src="/images/{{ $product->image }}" class="w-25 h-25"></td>
             <td>{{ $product->name }}</td>
             <td>{{ $product->detail }}</td>
             <td>

@@ -3,7 +3,7 @@
 @section('content')
 
     <h1 class="mb-3">Update post</h1>
-    <div class="bg-info p-4 rounded text-white" style="box-shadow: 0px 0px 5px grey">
+    <div class="bg-secondary p-4 rounded text-dark" style="box-shadow: 0px 0px 15px rgb(8, 8, 8)">
         <div class="lead">
             Edit post.
         </div>
@@ -17,12 +17,12 @@
                     <label for="title" class="form-label">Title</label>
                     <input value="{{ $post->title }}"
                         type="text"
-                        class="form-control"
+                        class="form-control text-white"
                         name="title"
                         placeholder="Title" required>
 
                     @if ($errors->has('title'))
-                        <span class="text-danger text-left">{{ $errors->first('title') }}</span>
+                        <span class="text-danger text-left bg-dark">{{ $errors->first('title') }}</span>
                     @endif
                 </div>
 
@@ -30,12 +30,12 @@
                     <label for="description" class="form-label">Description</label>
                     <input value="{{ $post->description }}"
                         type="text"
-                        class="form-control"
+                        class="form-control text-white"
                         name="description"
                         placeholder="Description" required>
 
                     @if ($errors->has('description'))
-                        <span class="text-danger text-left">{{ $errors->first('description') }}</span>
+                        <span class="text-danger text-left bg-dark">{{ $errors->first('description') }}</span>
                     @endif
                 </div>
 
@@ -43,18 +43,18 @@
                     <label for="body" class="form-label">Body</label>
                     <textarea
                         type="text"
-                        class="form-control"
+                        class="form-control text-white"
                         name="body"
                         placeholder="Body" required>{{ $post->body }}</textarea>
 
                     @if ($errors->has('body'))
-                        <span class="text-danger text-left">{{ $errors->first('body') }}</span>
+                        <span class="text-danger text-left bg-dark">{{ $errors->first('body') }}</span>
                     @endif
                 </div>
 
 
                 <button type="submit" class="btn btn-success">Save changes</button>
-                <a href="{{ route('posts.index') }}" class="btn btn-light">Back</a>
+                <a href="{{ route('posts.index') }}" class="btn btn-dark">Back</a>
             </form>
         </div>
 

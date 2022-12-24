@@ -32,13 +32,12 @@
         @include('layouts.partials.navbar')
         <!-- partial -->
         <div class="main-panel">
-            <div class="content-wrapper">
+            <div class="content-wrapper bg-white text-dark" style="height: 100vh;">
                 @yield('content')
 
                 @yield("scripts")
 
                 @show
-                <br><br><br><br><br><br><br><br><br>
             </div>
 
             <!-- content-wrapper ends -->
