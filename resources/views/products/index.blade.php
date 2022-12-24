@@ -1,12 +1,11 @@
 @extends('layouts.app-master')
 
 @section('content')
+<h2>Manage your Product here!</h2>
+<div class="p-4 rounded" style="box-shadow: 0px 0px 5px white;background: #042331;">
     <div class="row">
         <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
-                <h2>Laravel 9 CRUD with Image Upload Example from scratch - ItSolutionStuff.com</h2>
-            </div>
-            <div class="pull-right">
+            <div class="pull-right mb-3 float-right p-2">
                 <a class="btn btn-success" href="{{ route('products.create') }}"> Create New Product</a>
             </div>
         </div>
@@ -49,6 +48,6 @@
         @endforeach
     </table>
     {!! $products->links() !!}
-
+</div>
 
 @endsection

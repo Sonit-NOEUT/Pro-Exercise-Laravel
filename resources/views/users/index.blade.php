@@ -2,9 +2,9 @@
 
 @section('content')
 
-    <h1 class="mb-3">Laravel 8 User Roles and Permissions Step by Step Tutorial - codeanddeploy.com</h1>
+    <h1 class="mb-3">Manage Users Here!</h1>
 
-    <div class="bg-light p-4 rounded">
+    <div class="bg-dark p-4 rounded">
         <h1>Users</h1>
         <div class="lead">
             Manage your users here.
